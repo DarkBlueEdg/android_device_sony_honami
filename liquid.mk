@@ -15,5 +15,5 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
-PRODUCT_NAME := darkblueedg_honami
+PRODUCT_NAME := liquid_honami
 PRODUCT_DEVICE := honami
