@@ -1,7 +1,6 @@
 [
   {
-    "repository": "DarkBlueEdg/device_sony_rhine-common",
+    "repository": "device_sony_rhine-common",
     "target_path": "device/sony/rhine-common",
-    "branch": "p9.0"
   }
 ]
