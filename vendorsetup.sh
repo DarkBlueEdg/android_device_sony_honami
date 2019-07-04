@@ -1,1 +1,1 @@
-add_lunch_combo darkblueedg_honami-userdebug
+add_lunch_combo liquid_honami-userdebug
