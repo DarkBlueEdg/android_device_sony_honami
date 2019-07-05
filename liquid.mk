@@ -17,3 +17,5 @@ PRODUCT_GMS_CLIENTID_BASE := android-sony
 
 PRODUCT_NAME := liquid_honami
 PRODUCT_DEVICE := honami
+
+export LIQUID_BUILDTYPE=EXPERIMENTAL
