@@ -5,4 +5,5 @@
     <bool name="config_multiColorNotificationLed">true</bool>
     <bool name="config_intrusiveBatteryLed">true</bool>
     <bool name="config_multiColorBatteryLed">true</bool>
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
 </resources>
