@@ -43,3 +43,4 @@ static inline const char* getBTDefaultName()
 
 #define BTA_HOST_INTERLEAVE_SEARCH  TRUE
 
+#endif
