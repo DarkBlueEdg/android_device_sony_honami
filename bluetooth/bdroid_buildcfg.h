@@ -18,15 +18,28 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Xperia Z1"
-#define BTA_DISABLE_DELAY 1000 /* in milliseconds */
+#if !defined(OS_GENERIC)
+#include <cutils/properties.h>
+#include <string.h>
 
-// Enables Interleave scan
+static inline const char* getBTDefaultName()
+{
+    char device[PROPERTY_VALUE_MAX];
+    property_get("ro.boot.hardware", device, "");
+
+    if (!strcmp("honami", device)) {
+        return "Xperia Z1";
+    } else if (!strcmp("amami", device)) {
+        return "Xperia Z1 Compact";
+    } else if (!strcmp("togari", device)) {
+        return "Xperia Z Ultra";
+    }
+
+    return "Xperia";
+}
+
+#define BTM_DEF_LOCAL_NAME getBTDefaultName()
+#endif // OS_GENERIC
+
 #define BTA_HOST_INTERLEAVE_SEARCH  TRUE
-// Disables read remote device feature
-#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
-#define MAX_L2CAP_CHANNELS    14
-// skips conn update at conn completion
-#define BTA_BLE_SKIP_CONN_UPD  TRUE
 
-#endif
