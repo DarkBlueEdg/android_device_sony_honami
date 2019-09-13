@@ -37,6 +37,9 @@
     <integer name="config_screenBrightnessDoze">5</integer>
     <integer name="config_screenBrightnessDim">10</integer>
     <integer name="config_screenBrightnessDark">5</integer>
+    
     <bool name="config_supportDoubleTapWake">false</bool>
+    
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Xperia Z1</string>
     
 </resources>
