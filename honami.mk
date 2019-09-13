@@ -29,6 +29,10 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.sf.lcd_density=480 \
+    ro.usb.pid_suffix=19E
+
 # Device specific init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
