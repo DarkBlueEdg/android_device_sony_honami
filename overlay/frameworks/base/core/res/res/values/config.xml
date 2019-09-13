@@ -16,7 +16,6 @@
         <item>2048</item>
         <item>4096</item>
     </integer-array>
-    
     <integer-array name="config_autoBrightnessLcdBacklightValues">
         <item>10</item>   <!--    0 -->
         <item>32</item>   <!--   64 -->
